@@ -44,7 +44,7 @@ public class Driver {
             }
 
             //pause the program so that the user can read what we just printed to the terminal window
-            System.out.println("\nPress enter key to continue...");
+            System.out.println("\nPlease press enter key to continue...");
             input.nextLine();
             input.nextLine(); //second read is required - bug in Scanner class; a String read is ignored straight after reading an int.
 
@@ -53,7 +53,7 @@ public class Driver {
         }
 
         //the user chose option 0, so exit the program
-        System.out.println("Exiting...bye bye");
+        System.out.println("Exiting...thank you~bye bye");
         System.exit(0);
     }
 
@@ -92,7 +92,7 @@ public class Driver {
             System.out.println("Cat Added Successfully");
         }
         else{
-            System.out.println("No cats Added");
+            System.out.println("No cat Added");
         }
     }
 
@@ -107,6 +107,7 @@ public class Driver {
         int numberCats = input.nextInt();
         shop = new Shop(numberCats);
     }
+   
     private void deleteCats(){
         input.nextLine();
         System.out.println("which cat you want to delete:");
