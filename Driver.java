@@ -47,7 +47,7 @@ public class Driver {
             }
 
             //pause the program so that the user can read what we just printed to the terminal window
-            System.out.println("\nPress enter key to continue...");
+            System.out.println("\nPlease press enter key to continue...");
             input.nextLine();
             input.nextLine(); //second read is required - bug in Scanner class; a String read is ignored straight after reading an int.
 
@@ -56,7 +56,7 @@ public class Driver {
         }
 
         //the user chose option 0, so exit the program
-        System.out.println("Exiting...bye bye");
+        System.out.println("Exiting...thank you (*>.<*)bye bye");
         System.exit(0);
     }
 // findACAT method prompts the user to enter a cat name to search for
@@ -89,14 +89,16 @@ public class Driver {
         String catSex = input.nextLine();
         System.out.print("Enter the Characteristic:  ");
         String catCharacteristic = input.nextLine();
+        System.out.print("Enter the Appearance:  ");
+        String catAppearance = input.nextLine();
 
-        Cat temp = new Cat(catName , catSex ,catAge, catCharacteristic);
+        Cat temp = new Cat(catName , catSex ,catAge, catCharacteristic,catAppearance);
         boolean isAdded = shop.add(temp);
         if (isAdded){
             System.out.println("Cat Added Successfully");
         }
         else{
-            System.out.println("No cats Added");
+            System.out.println("No cat Added");
         }
     }
 // method to print all the Cats in the Shop
