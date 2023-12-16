@@ -52,11 +52,11 @@ public class Cat {
         return characteristic;// Get the characteristic of the cat
     }
 
-    public void setappearance(String appearance)
+    public void setAppearance(String appearance)
     {
         this.appearance = appearance;// Set the appearance of the cat
     }
-    public String getappearance() {
+    public String getAppearance() {
         return appearance;// Get the appearance of the cat
     }
 
