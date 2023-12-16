@@ -109,7 +109,7 @@ public class Driver {
 // method to setup the Shop with the desired number of products
     private void setup(){
         //find out from the user how many products they would like to order
-        System.out.print("How many cats would you like to have in your Shop?  ");
+        System.out.print("How many cats would you like to have in your university?  ");
         int numberCats = input.nextInt();
         shop = new Shop(numberCats);
     }
