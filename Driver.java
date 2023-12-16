@@ -68,11 +68,11 @@ public class Driver {
         Cat foundCat = shop.find(catName);
 // If a cat is found, it prints a message with the found cat's information
         if (foundCat != null) {
-            System.out.println("The found Thing is:  " + foundCat);
+            System.out.println("The found thing is:  " + foundCat);
         }
     //else block to handle the case when there are no Things with the given name in the Shop
         else{
-            System.out.println("There are no Things with the name [" + catName + "] in the Shop.");
+            System.out.println("There are no things with the name [" + catName + "] in the Shop.");
         }
     }
 
@@ -109,7 +109,7 @@ public class Driver {
 // method to setup the Shop with the desired number of products
     private void setup(){
         //find out from the user how many products they would like to order
-        System.out.print("How many cats would you like to have in your Store?  ");
+        System.out.print("How many cats would you like to have in your Shop?  ");
         int numberCats = input.nextInt();
         shop = new Shop(numberCats);
     }
