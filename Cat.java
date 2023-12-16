@@ -4,32 +4,47 @@ public class Cat {
     private String sex;
     private double age;
     private String characteristic;
+    private String appearance;
 
     public Cat() {
         this.name = "a Name";
-        this.sex = "a sex";
+        this.sex = "a Sex";
         this.age=99.99;
         this.characteristic="a Characteristic";
+        this.appearance = "a Appearance";
     }
 
-    public Cat(String name, String sex, double age,String characteristic) {
+    public Cat(String name, String sex, double age,String characteristic,String appearance) {
         this.name = name;
         this.sex = sex;
         this.age=age;
         this.characteristic=characteristic;
+        this.appearance=appearance;
     }
 
-    public String getName() {
-        return name;
-    }
 
     public void setName(String name) {
         this.name = name;
     }
+    public String getName() {
+        return name;
+    }
 
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+    public String getSex() {
+        return sex;
+    }
 
+    public void setAge(double age) {
+        this.age = age;
+    }
+    public double getAge() {
+        return age;
+    }
 
-    public void setCharacteristic(String sex)
+    public void setCharacteristic(String characteristic)
     {
         this.characteristic = characteristic;
     }
@@ -37,23 +52,22 @@ public class Cat {
         return characteristic;
     }
 
-    public String getSex() {
-        return sex;
+    public void setappearance(String appearance)
+    {
+        this.appearance = appearance;
     }
-    public void setSex(String sex) {
-        this.sex = sex;
+    public String getappearance() {
+        return appearance;
     }
-    public void setAge(double age) {
-        this.age = age;
-    }
-    public double getAge() {
-        return age;
-    }
+
+
+
     @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
-                ", sex=" +sex +",age="+age+",characteristic"+characteristic+
+                ", sex=" +sex +",age="+age+",characteristic"+characteristic+",appearance"+appearance+
                 '}';
     }
+
 }
