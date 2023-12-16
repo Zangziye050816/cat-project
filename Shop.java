@@ -65,7 +65,7 @@ public class Shop {
             if (cats[i].getName().equals(name)){
                 index = i;
                 break;
-            }
+             }
         }
         System.arraycopy(cats, 0, newCats, 0, index);// Copy the cats before the deleted cat to the new array
         System.arraycopy(cats, index + 1, newCats, index, cats.length - index - 1);// Copy the cats after the deleted cat to the new array
@@ -73,9 +73,8 @@ public class Shop {
         total = cats.length;// Update the total number of cats in the array
 }
 
-    }
-
-    public void updateCats(String name){
+   
+     public void updateCats(String name){
         Cat cat = null;// Initialize a variable to store the cat to be updated
         for(int i = 0; i<total; i++){// Iterate through the cats array
             if (cats[i].getName().equals(name)){ // Check if the current cat's name matches the given name
