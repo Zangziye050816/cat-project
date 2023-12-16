@@ -3,7 +3,6 @@ public class Driver {
 
     private Scanner input = new Scanner(System.in);
     private Shop shop;
-    private CatsManager catsManager;
 
     public static void main(String[] args) {
         System.out.println("Cats Project V 1.0");
