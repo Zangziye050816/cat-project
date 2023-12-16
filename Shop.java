@@ -89,8 +89,20 @@ public class Shop {
             System.out.print("Enter the age:  ");
             double catAge = input.nextDouble(); // Read the new cat age from the user
             input.nextLine();
-            System.out.print("Enter the Sex:  ");
-            String catSex = input.nextLine(); // Read the new cat sex from the user
+             System.out.print("Choose the Sex:  ");
+            System.out.print(""" 
+                1)male 2) female==>>""");
+            int option = input.nextInt();
+            String catSex = null;
+            if (option != 0) {
+
+                switch (option) {
+                    case 1 -> catSex = "male";
+                    case 2 -> catSex = "female";
+                    default -> System.out.println("No option : " + option);
+                }
+            }
+            input.nextLine();// Read the new cat sex from the user
             System.out.print("Enter the Characteristic:  ");
             String catChar = input.nextLine();// Read the new cat characteristic from the user
             System.out.print("Enter the Appearance:  ");
