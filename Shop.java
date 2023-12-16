@@ -94,11 +94,16 @@ public class Shop {
             String catSex = input.nextLine(); // Read the new cat sex from the user
             System.out.print("Enter the Characteristic:  ");
             String catChar = input.nextLine();// Read the new cat characteristic from the user
+            System.out.print("Enter the Appearance:  ");
+            String catAppearance = input.nextLine();// Read the new cat appearance from the user
+            
 
             cat.setName(catName);// Update the cat's name
             cat.setAge(catAge);// Update the cat's age
             cat.setSex(catSex); // Update the cat's sex
             cat.setCharacteristic(catChar); // Update the cat's characteristic
+            cat.setAppearance(catAppearance); // Update the cat's appearance
+            
         }else{
             System.out.println("no cat"); // If the cat to be updated is not found
         }
