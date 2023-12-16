@@ -11,7 +11,7 @@ public class Shop {
 // Private method that checks if the array is full
     private boolean isFull() {
          // Returns true if "total" is equal to the length of the "cats" array
-    }
+    
         return total == cats.length;
     }
 // Private method that checks if the array is empty
