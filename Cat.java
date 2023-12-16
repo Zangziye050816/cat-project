@@ -66,7 +66,7 @@ public class Cat {
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
-                ", sex=" +sex +",age="+age+",characteristic"+characteristic+",appearance"+appearance+
+                ", sex=" +sex +",age="+age+",characteristic: "+characteristic+",appearance: "+appearance+
                 '}';
     }
 
