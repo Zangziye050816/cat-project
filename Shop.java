@@ -55,6 +55,8 @@ public class Shop {
         }
         return foundCat;
     }
+//The following content refers to the code available on Github
+
  // Create a new array with length one less than the original array
     public void deleteCats(String name){
         Cat[] newCats = new Cat[cats.length - 1];
