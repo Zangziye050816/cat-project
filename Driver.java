@@ -59,22 +59,6 @@ public class Driver {
         System.out.println("Exiting...thank you (*>.<*)bye bye");
         System.exit(0);
     }
-// findACAT method prompts the user to enter a cat name to search for
-    private void findACAT() {
-        input.nextLine();
-        System.out.print("Please Enter a Cat Name to Find : ");
-        String catName = input.nextLine();
-
-        Cat foundCat = shop.find(catName);
-// If a cat is found, it prints a message with the found cat's information
-        if (foundCat != null) {
-            System.out.println("The found thing is:  " + foundCat);
-        }
-    //else block to handle the case when there are no Things with the given name in the Shop
-        else{
-            System.out.println("There are no things with the name [" + catName + "] in the Shop.");
-        }
-    }
 
 // method to add a new Cat to the Shop
     private void addACAT(){
@@ -113,19 +97,33 @@ public class Driver {
             System.out.println("No cat Added");
         }
     }
+
+ // findACAT method prompts the user to enter a cat name to search for
+    private void findACAT() {
+        input.nextLine();
+        System.out.print("Please Enter a Cat Name to Find : ");
+        String catName = input.nextLine();
+
+        Cat foundCat = shop.find(catName);
+        // If a cat is found, it prints a message with the found cat's information
+        if (foundCat != null) {
+            System.out.println("The found cat is:  " + foundCat);
+        }
+        //else block to handle the case when there are no Things with the given name in the Shop
+        else{
+            System.out.println("There are no cat with the name [" + catName + "] in the University.");
+        }
+    }
+
+
 // method to print all the Cats in the Shop
     private void printAllCats() {
         System.out.println("List of Cats are:");
         System.out.println(shop.list());
     }
-// method to setup the Shop with the desired number of products
-    private void setup(){
-        //find out from the user how many products they would like to order
-        System.out.print("How many cats would you like to have in your university?  ");
-        int numberCats = input.nextInt();
-        shop = new Shop(numberCats);
-    }
-    //This method prompts the user to enter the name of the cat they want to delete and uses the deleteCats() method of the Shop class to remove the cat from the shop.
+
+
+ //This method prompts the user to enter the name of the cat they want to delete and uses the deleteCats() method of the Shop class to remove the cat from the shop.
     private void deleteCats(){
         input.nextLine();
         System.out.println("which cat you want to delete:");
@@ -135,6 +133,7 @@ public class Driver {
         shop.deleteCats(catName);
 
     }
+    
 //This method prompts the user to enter the name of the cat they want to update and uses the updateCats() method of the Shop class to modify the details of the cat.
     private void updateCats(){
         input.nextLine();
@@ -142,6 +141,15 @@ public class Driver {
         String catName= input.nextLine();
         shop.updateCats(catName);
     }
+
+ // method to setup the Shop with the desired number of products
+    private void setup(){
+        //find out from the user how many products they would like to order
+        System.out.print("How many cats would you like to have in your university?  ");
+        int numberCats = input.nextInt();
+        shop = new Shop(numberCats);
+    }
+    
 
 ///////////////////////////////////////////////////////
 
