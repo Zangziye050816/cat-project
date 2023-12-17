@@ -32,7 +32,7 @@ public class Shop {
 // Public method that returns a string representation of the Cat objects in the array
     public String list() {
         if (isEmpty()) {// Checks if the array is empty
-            return "No cats in the store";
+            return "No cats in the university";
         } else {
             String listOfCats = "";// Declares an empty string variable called "listOfCats"
             for (int i = 0; i < total; i++) {// Iterates through the array from index 0 to "total"
